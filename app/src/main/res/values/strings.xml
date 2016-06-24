@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MyFirstGame</string>
+
+    <!-- game menu title -->
+    <string name="action_settings">Settings</string>
+
 </resources>
