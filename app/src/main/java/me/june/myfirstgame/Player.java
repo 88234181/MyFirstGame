@@ -85,4 +85,8 @@ public class Player extends GameObject{
     public void resetScore(){
         score = 0;
     }
+
+    public void resetDY(){
+        dy = 0;
+    }
 }
