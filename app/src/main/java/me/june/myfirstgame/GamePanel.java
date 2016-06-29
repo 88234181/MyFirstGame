@@ -111,7 +111,6 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
             if(player.getPlaying()){
                 if(!started){
                     started = true;
-
                 }
                 reset = false;
                 player.setUp(true);
@@ -256,7 +255,9 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback
 
             canvas.scale(scaleFactorX, scaleFactorY);
             bg.draw(canvas);
-            player.draw(canvas);
+            if(!disappear){
+                player.draw(canvas);
+            }
 
             //draw smoke
             for(Smokepuff sp: smoke){

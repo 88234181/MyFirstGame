@@ -29,7 +29,7 @@ public class Explosion {
             if(i%5 == 0 && i > 0){
                 row++;
             }
-            image[i] = Bitmap.createBitmap(spritesheet, i-(5*row)*width, row*height, width, height);
+            image[i] = Bitmap.createBitmap(spritesheet, (i-(5*row))*width, row*height, width, height);
         }
         animation.setFrames(image);
         animation.setDelay(10);
